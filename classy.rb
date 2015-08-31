@@ -19,11 +19,22 @@ class Human
       puts "I'm sleepy... I need coffee."
     end
   end
+  def drink(some_amount)
+    @some_amount = some_amount
+    if some_amount <= @ounces
+      @ounces -= @some_amount
+    else
+      puts "You cant drink more than you have."
+    end
 
+  end
 end
 
 first_human = Human.new( "Chad", "Oakley")
 first_human.greeting
+first_human.has_coffee
+first_human.buy_coffee(20)
+first_human.drink(5)
 first_human.has_coffee
 
 # DONE! Make it so humans have a first name
