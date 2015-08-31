@@ -1,9 +1,13 @@
 
 class Human
+  def initialize(first_name)
+    @first_name = first_name
+    @last_name = last_name
+  end
 end
 
 
-# Make it so humans have a first name
+# DONE! Make it so humans have a first name
 # Make it so humans have a last name
 # Make it so humans have a greeting of their first name followed by their last name
 # Make it so humans can buy some ounces of coffee
