@@ -7,7 +7,13 @@ class Human
     @first_name = first_name
     @last_name = last_name
   end
+  def buy_coffee(ounces)
+    @ounces =  ounces
+  end  
 end
+
+first_human = Human.new( "Chad", "Oakley")
+first_human.greeting
 
 
 # DONE! Make it so humans have a first name
